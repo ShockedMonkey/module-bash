@@ -2,7 +2,7 @@
 
 for path in $(echo $1 | tr " " "\n")
 do
-	UNEXISTING=true
+    UNEXISTING=true
 	for line in $(ls -R .)
 	do
 		if [[ $line =~ "$path" ]]; then
